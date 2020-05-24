@@ -21,14 +21,10 @@ export class SelectCategory extends React.Component {
   }
 
   handleCategory(event) {
-    this.setState({category: event.target.id})
-    setTimeout(() => {
-      this.props.searchWger(this.state.category)
-      console.log(this.state.category)
-    }
-      , 0)
-    
-  }
+    this.setState({category: event.target.id}, () =>{ 
+      this.props.searchWger(this.state.category);
+      console.log(this.state.category)}    
+    )}
 
   render() {
     return (
