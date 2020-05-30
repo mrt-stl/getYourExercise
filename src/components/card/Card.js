@@ -9,7 +9,7 @@ export class CardExercise extends React.Component {
             categoryToString: {
                 8: 'Arms',
                 9: 'Legs',
-                10: 'Core',
+                10: 'Abs',
                 11: 'Chest',
                 12: 'Back',
                 13: 'Shoulders',
@@ -24,7 +24,7 @@ export class CardExercise extends React.Component {
                     <Card.Img variant="bottom" src={this.props.exercise.srcImg} />
                     <Card.Body>
                         <Card.Title>{this.props.exercise.name}</Card.Title>
-                        <Card.Text>{this.props.exercise.description}</Card.Text>
+                        <Card.Text>{<span dangerouslySetInnerHTML={{ __html: this.props.exercise.description }} />}</Card.Text>
                     </Card.Body>
                 </Card>
         )

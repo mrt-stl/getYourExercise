@@ -1,9 +1,29 @@
 .hero-banner {
   background-image: url(../../alexander-krivitskiy-XndbZ7JYtfA-unsplash.jpeg);
   background-size: cover;
-  height: 200px;
+  background-position: center top;
+  min-height: 200px;
+  align-items: center;
 }
 
 .card-columns {
   column-count: 2;
+}
+
+.hero-banner p {
+  text-align: center;
+}
+
+.card-img-bottom {
+  max-width: 200px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.col {
+  text-align: center;
+}
+
+.currentStatus {
+  margin-top: 10px;
 }

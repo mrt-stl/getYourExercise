@@ -12,7 +12,7 @@ export class CardDeckExercises extends React.Component {
             <CardColumns className="text-center">
                 {
                     this.props.exercises.map(exercise => {
-                        return <CardExercise exercise= {exercise} key={exercise.id}/>
+                        return <CardExercise exercise= {exercise} categories={this.props.categories} key={exercise.id}/>
                     })
                 }
             </CardColumns>
